@@ -30,25 +30,34 @@ and your choice of a hand-picked, premium melon.</p>
     </tr>
 </table>
 
-Order Form
+<h2>Order Form</h2>
+<form>
+    <label for="name">Your name</label>
+    <input type="text" name="name" id="name">
+    <label for="recipient_name">Who are we sending this to? </label>
+    <input type="text" name="recipient_name" id="recipient_name">
 
-Your name
+<h2>Choose a melon</h2>
+<select name="melon">
+    <option value="watermelon">Watermelon</option>
+    <option value="canteloupe">Canteloupe</option>
+    <option value="honeydew">Honeydew</option>
+</select>
 
-Who are we sending this to?
+<h2>When should we deliver?</h2>
+<input type="radio" name="time" value="am"> Morning
+<input type="radio" name="time" value="pm"> Evening
+<input type="radio" name="time" value="any"> Any time
 
-Choose a melon
-Watermelon
-Canteloupe
-Honeydew
+<!-- <h2>Enter your message:</h2> -->
+<label for="message">Enter your message:</label>
+<textarea name="message" id="message"></textarea>
 
-When should we deliver?
-Morning
-Evening
-Any time
 
-Enter your message:
-
-Subscribe to our newsletter
-Yes
+<h2>Subscribe to our newsletter</h2>
+<input type="checkbox" name="subscribe" value ="yes" id= "subscribe_checkbox">
+<label for ="subscribe_checkbox">Yes</label>
+<input type = "submit">
+    </form>
     </body>
 </html>
